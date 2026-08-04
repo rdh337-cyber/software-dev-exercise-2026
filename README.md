@@ -1,13 +1,4 @@
-# Starter Repository for Software Development Exercise
-
-Student instructions (feel free to remove this section later, as desired):
-
-> FYI - there are some important things missing from this repo. Follow along in class to implement testing and continuous integration, and secure environment variables using a ".env" and ".gitignore" file, etc. We may also extend the functionality to build a web interface. For full solutions, see https://github.com/s2t2/my-first-repo-fall-2025 (including that repository's [commit history](https://github.com/s2t2/my-first-repo-fall-2025/commits/main/) for step-by-step walkthrough).
->
-> FYI - students please use a "premium" AlphaVantage API Key shared by the prof (see "Configuration" section below).
-
-
-Students: first visit https://github.com/prof-rossetti/software-dev-exercise and click "Use this template" green button to make a copy of the repo under your own control.
+# Software Development Exercise
 
 
 ## Setup
@@ -65,8 +56,11 @@ python -m app.rps
 Run stocks dashboard:
 
 ```sh
-python -m app.stocks
+#option 1: pass in the env var at runtime from the command line:
+ALPHAVANTAGE_API_KEY="_____" python -m app.stocks
 ```
+#option 2: after we have set up our env var in the ".env file, run as is:
+ python -m app.stocks
 
 ## Testing
 
